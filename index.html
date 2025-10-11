@@ -5,10 +5,7 @@
 <title> Sensor Vault </title>
 </head>
 
-<body style="background-color:black">
-
-
-
+<body style="background-color:black;align-content: center;">
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-15min"></div>
 <script type="text/javascript">
@@ -17,16 +14,13 @@ Cal("init", "15min", {origin:"https://app.cal.com"});
 
   Cal.ns["15min"]("inline", {
     elementOrSelector:"#my-cal-inline-15min",
-    config: {"layout":"column_view"},
+    config: {"layout":"month_view"},
     calLink: "aryansharma/15min",
   });
 
-  Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"column_view"});
+  Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
   </script>
   <!-- Cal inline embed code ends -->
-
-
-
 </body>
 
 </html>
